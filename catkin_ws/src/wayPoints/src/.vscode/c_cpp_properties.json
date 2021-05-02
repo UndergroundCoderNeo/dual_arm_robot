@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/mac/catkin_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/mac/catkin_ws/src/ros_astra_camera/include/**",
+        "/home/mac/catkin_ws/src/find_object_2d/include/**",
+        "/home/mac/catkin_ws/src/vision_msgs/include/**",
+        "/home/mac/catkin_ws/src/wayPoints/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

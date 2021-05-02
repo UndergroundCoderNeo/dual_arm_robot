@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dscr5_6
+    relative_path: urdf/dscr5_6.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/dscr5_6.srdf
+  CONFIG:
+    author_name: Zhenghong Xiao
+    author_email: 415750336@qq.com
+    generated_timestamp: 1610449627

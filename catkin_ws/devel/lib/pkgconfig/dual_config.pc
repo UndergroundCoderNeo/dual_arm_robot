@@ -1,0 +1,8 @@
+prefix=/home/dell/catkin_ws/devel
+
+Name: dual_config
+Description: Description of dual_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

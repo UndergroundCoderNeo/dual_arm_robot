@@ -1,0 +1,47 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"llink1" [label="llink1"];
+"llink2" [label="llink2"];
+"llink3" [label="llink3"];
+"llink4" [label="llink4"];
+"llink5" [label="llink5"];
+"llink6" [label="llink6"];
+"llink7" [label="llink7"];
+"rlink1" [label="rlink1"];
+"rlink2" [label="rlink2"];
+"rlink3" [label="rlink3"];
+"rlink4" [label="rlink4"];
+"rlink5" [label="rlink5"];
+"rlink6" [label="rlink6"];
+"rlink7" [label="rlink7"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "ljoint1" [label="xyz: -0.385 0 1.33 \nrpy: 0 -1.5708 0"]
+"ljoint1" -> "llink1"
+"llink1" -> "ljoint2" [label="xyz: 0 0 0 \nrpy: -1.57 -2.1684e-19 3.14"]
+"ljoint2" -> "llink2"
+"llink2" -> "ljoint3" [label="xyz: 0 -0.4 0 \nrpy: -1.5708 4.23516e-22 -3.14159"]
+"ljoint3" -> "llink3"
+"llink3" -> "ljoint4" [label="xyz: 0 0 0 \nrpy: -1.5708 4.23516e-22 -3.14159"]
+"ljoint4" -> "llink4"
+"llink4" -> "ljoint5" [label="xyz: 0.4 0 0 \nrpy: -1.5708 -0 -1.5708"]
+"ljoint5" -> "llink5"
+"llink5" -> "ljoint6" [label="xyz: 0 0 0 \nrpy: -1.5708 4.23516e-22 -3.14159"]
+"ljoint6" -> "llink6"
+"llink6" -> "ljoint7" [label="xyz: 0 -0.3 0 \nrpy: 1.5708 -0 0"]
+"ljoint7" -> "llink7"
+"base_link" -> "rjoint1" [label="xyz: 0.385 0 1.33 \nrpy: 0 1.5708 -0"]
+"rjoint1" -> "rlink1"
+"rlink1" -> "rjoint2" [label="xyz: 0 0 0 \nrpy: -1.5708 4.23516e-22 -3.14159"]
+"rjoint2" -> "rlink2"
+"rlink2" -> "rjoint3" [label="xyz: 0 -0.4 0 \nrpy: -1.5708 4.23516e-22 -3.14159"]
+"rjoint3" -> "rlink3"
+"rlink3" -> "rjoint4" [label="xyz: 0 0 0 \nrpy: -1.5708 4.23516e-22 -3.14159"]
+"rjoint4" -> "rlink4"
+"rlink4" -> "rjoint5" [label="xyz: -0.4 0 0 \nrpy: -1.5708 -0 1.5708"]
+"rjoint5" -> "rlink5"
+"rlink5" -> "rjoint6" [label="xyz: 0 0 0 \nrpy: -1.5708 -4.23516e-22 3.14159"]
+"rjoint6" -> "rlink6"
+"rlink6" -> "rjoint7" [label="xyz: 0 -0.3 0 \nrpy: 1.5708 -0 0"]
+"rjoint7" -> "rlink7"
+}

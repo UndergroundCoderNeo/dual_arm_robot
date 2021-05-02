@@ -1,0 +1,74 @@
+# joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
+# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+joint_limits:
+  ljoint1:
+    has_velocity_limits: true
+    max_velocity: 1.047
+    has_acceleration_limits: false
+    max_acceleration: 0
+  ljoint2:
+    has_velocity_limits: true
+    max_velocity: 1.047
+    has_acceleration_limits: false
+    max_acceleration: 0
+  ljoint3:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  ljoint4:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  ljoint5:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  ljoint6:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  ljoint7:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint1:
+    has_velocity_limits: true
+    max_velocity: 1.047
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint2:
+    has_velocity_limits: true
+    max_velocity: 1.047
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint3:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint4:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint5:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint6:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0
+  rjoint7:
+    has_velocity_limits: true
+    max_velocity: 1.57
+    has_acceleration_limits: false
+    max_acceleration: 0

@@ -1,0 +1,8 @@
+prefix=/home/dell/catkin_ws/install
+
+Name: dscr5_6
+Description: Description of dscr5_6
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

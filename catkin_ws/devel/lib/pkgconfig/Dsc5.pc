@@ -1,0 +1,8 @@
+prefix=/home/dell/catkin_ws/devel
+
+Name: Dsc5
+Description: Description of Dsc5
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

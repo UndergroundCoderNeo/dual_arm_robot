@@ -1,0 +1,8 @@
+prefix=/home/dell/catkin_ws/install
+
+Name: wayPoints
+Description: Description of wayPoints
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp actionlib_msgs actionlib message_runtime

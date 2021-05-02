@@ -1,0 +1,8 @@
+prefix=/home/dell/catkin_ws/devel
+
+Name: CamToBaseTrans
+Description: Description of CamToBaseTrans
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp actionlib_msgs actionlib message_runtime

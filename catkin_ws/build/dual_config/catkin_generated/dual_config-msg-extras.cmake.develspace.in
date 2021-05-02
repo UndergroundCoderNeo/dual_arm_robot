@@ -1,0 +1,2 @@
+set(dual_config_MESSAGE_FILES "")
+set(dual_config_SERVICE_FILES "")

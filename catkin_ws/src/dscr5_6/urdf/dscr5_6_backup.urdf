@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="dscr5_6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.33471583537977E-06 0.00662907239788253 1.33004670421342"
+        rpy="0 0 0" />
+      <mass
+        value="25.8577669048994" />
+      <inertia
+        ixx="0.267014137924139"
+        ixy="-1.36584455424997E-05"
+        ixz="4.24690442718128E-07"
+        iyy="0.472244407235779"
+        iyz="5.34065558451065E-05"
+        izz="0.549554614712028" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rlink1">
+    <inertial>
+      <origin
+        xyz="-3.48537472660837E-07 -0.0233818482234878 -0.0427896937411072"
+        rpy="0 0 0" />
+      <mass
+        value="4.9503936266377" />
+      <inertia
+        ixx="0.0280328872192691"
+        ixy="-1.09421874885135E-08"
+        ixz="8.01870940105599E-08"
+        iyy="0.0290016533494644"
+        iyz="0.00182600668247838"
+        izz="0.0175058159650953" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint1"
+    type="revolute">
+    <origin
+      xyz="-0.384999999999999 0 1.33"
+      rpy="3.14159265358979 1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rlink1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.047" />
+  </joint>
+  <link
+    name="rlink2">
+    <inertial>
+      <origin
+        xyz="8.53027319225319E-07 0.132185395312596 0.0316164146761528"
+        rpy="0 0 0" />
+      <mass
+        value="3.79795466425453" />
+      <inertia
+        ixx="0.0345043951838881"
+        ixy="6.83453568770256E-07"
+        ixz="-3.61629286229262E-08"
+        iyy="0.0138915011944337"
+        iyz="0.00967376859925764"
+        izz="0.0312407355826189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.913725490196078 0.925490196078431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="rlink1" />
+    <child
+      link="rlink2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.916"
+      upper="0.916"
+      effort="60"
+      velocity="1.047" />
+  </joint>
+  <link
+    name="rlink3">
+    <inertial>
+      <origin
+        xyz="-8.01697919161626E-07 -0.0193078273568117 -0.0351761512008308"
+        rpy="0 0 0" />
+      <mass
+        value="2.90590329386609" />
+      <inertia
+        ixx="0.012506710918385"
+        ixy="-3.18829086332697E-08"
+        ixz="1.61628680644397E-07"
+        iyy="0.0126795925744411"
+        iyz="0.000667419670602496"
+        izz="0.00682395851939506" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint3"
+    type="revolute">
+    <origin
+      xyz="0 0.4 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="rlink2" />
+    <child
+      link="rlink3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="rlink4">
+    <inertial>
+      <origin
+        xyz="-0.144257090671159 -9.85621058857689E-06 -0.0330829693859012"
+        rpy="0 0 0" />
+      <mass
+        value="3.62743871363849" />
+      <inertia
+        ixx="0.0129758721943285"
+        ixy="-2.58330084453535E-06"
+        ixz="0.0089132335031844"
+        iyy="0.0321838755377905"
+        iyz="2.5505256066707E-08"
+        izz="0.0283162014026305" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="rlink3" />
+    <child
+      link="rlink4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="rlink5">
+    <inertial>
+      <origin
+        xyz="-5.73325782216028E-06 -0.0539256625097546 -0.0673965611550317"
+        rpy="0 0 0" />
+      <mass
+        value="1.22777453272549" />
+      <inertia
+        ixx="0.00671987251306287"
+        ixy="-1.73026874797395E-07"
+        ixz="4.00366572180421E-07"
+        iyy="0.00522041312928112"
+        iyz="0.0023320996856893"
+        izz="0.00406763138318156" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint5"
+    type="revolute">
+    <origin
+      xyz="-0.4 0 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="rlink4" />
+    <child
+      link="rlink5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="rlink6">
+    <inertial>
+      <origin
+        xyz="3.6069089082158E-07 -0.0302648113567473 0.000654424356794522"
+        rpy="0 0 0" />
+      <mass
+        value="2.18349168254272" />
+      <inertia
+        ixx="0.0071110582460742"
+        ixy="1.28155589668657E-08"
+        ixz="2.0793851567459E-08"
+        iyy="0.00436647605709646"
+        iyz="-0.000217056908270872"
+        izz="0.00649083623519741" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="rlink5" />
+    <child
+      link="rlink6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.96"
+      upper="0.96"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="rlink7">
+    <inertial>
+      <origin
+        xyz="-1.6115772992209E-05 -0.000141462244165972 -0.031877389713026"
+        rpy="0 0 0" />
+      <mass
+        value="0.28903198402219" />
+      <inertia
+        ixx="0.000202802134225507"
+        ixy="2.0837505013434E-10"
+        ixz="1.07324494570625E-07"
+        iyy="0.000203587280513312"
+        iyz="1.58994797887414E-07"
+        izz="0.000316585846451796" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/rlink7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint7"
+    type="continuous">
+    <origin
+      xyz="0 -0.1805 0"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="rlink6" />
+    <child
+      link="rlink7" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="llink1">
+    <inertial>
+      <origin
+        xyz="-3.48534555660862E-07 -0.0233818482203476 -0.0427896937411069"
+        rpy="0 0 0" />
+      <mass
+        value="4.95039362663772" />
+      <inertia
+        ixx="0.0280328872192692"
+        ixy="-1.09421874361315E-08"
+        ixz="8.01870939683973E-08"
+        iyy="0.0290016533494645"
+        iyz="0.00182600668247842"
+        izz="0.0175058159650953" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint1"
+    type="revolute">
+    <origin
+      xyz="0.385 0 1.33000000000292"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="llink1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.047" />
+  </joint>
+  <link
+    name="llink2">
+    <inertial>
+      <origin
+        xyz="8.57088727768129E-07 -0.13218539479818 -0.0316164152507733"
+        rpy="0 0 0" />
+      <mass
+        value="3.79795439943558" />
+      <inertia
+        ixx="0.0345043950633951"
+        ixy="-6.83154507808564E-07"
+        ixz="3.59263239477534E-08"
+        iyy="0.0138915001045365"
+        iyz="0.00967376854022875"
+        izz="0.0312407342738061" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.913725490196078 0.925490196078431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 0 -3.14159265358978" />
+    <parent
+      link="llink1" />
+    <child
+      link="llink2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.916"
+      upper="0.916"
+      effort="60"
+      velocity="1.047" />
+  </joint>
+  <link
+    name="llink3">
+    <inertial>
+      <origin
+        xyz="-8.01697918939581E-07 -0.0193078273536719 -0.035176151200831"
+        rpy="0 0 0" />
+      <mass
+        value="2.90590329386612" />
+      <inertia
+        ixx="0.0125067109183852"
+        ixy="-3.18829086345831E-08"
+        ixz="1.61628680720986E-07"
+        iyy="0.0126795925744412"
+        iyz="0.000667419670602472"
+        izz="0.00682395851939513" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.400000000000002 0"
+      rpy="-1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="llink2" />
+    <child
+      link="llink3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="llink4">
+    <inertial>
+      <origin
+        xyz="-0.144257090671159 -9.85621058846586E-06 -0.0330829693890409"
+        rpy="0 0 0" />
+      <mass
+        value="3.6274387136385" />
+      <inertia
+        ixx="0.0129758721958824"
+        ixy="-2.5832991490571E-06"
+        ixz="0.0089132335030002"
+        iyy="0.0321838755383158"
+        iyz="2.55050844184399E-08"
+        izz="0.028316201404925" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 0 3.14159265358979" />
+    <parent
+      link="llink3" />
+    <child
+      link="llink4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="llink5">
+    <inertial>
+      <origin
+        xyz="5.73532288894452E-06 0.0539158105053979 -0.0673965526908485"
+        rpy="0 0 0" />
+      <mass
+        value="1.22777421461757" />
+      <inertia
+        ixx="0.00671987162846365"
+        ixy="-1.73133868954827E-07"
+        ixz="-4.00335180443076E-07"
+        iyy="0.00522041225072359"
+        iyz="-0.00233209954708952"
+        izz="0.00406763025471862" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint5"
+    type="revolute">
+    <origin
+      xyz="-0.400000000000081 0 0"
+      rpy="-1.5707963267949 0 1.57079632679491" />
+    <parent
+      link="llink4" />
+    <child
+      link="llink5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="llink6">
+    <inertial>
+      <origin
+        xyz="-3.60690891154647E-07 -0.0302648113567476 -0.000644568673573311"
+        rpy="0 0 0" />
+      <mass
+        value="2.1834916825427" />
+      <inertia
+        ixx="0.00711105824607414"
+        ixy="-1.28155589872999E-08"
+        ixz="2.07938515571978E-08"
+        iyy="0.00436647605709643"
+        iyz="0.00021705690827092"
+        izz="0.00649083623519734" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="llink5" />
+    <child
+      link="llink6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.96"
+      upper="0.96"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+  <link
+    name="llink7">
+    <inertial>
+      <origin
+        xyz="1.61157729924311E-05 0.000131606557804023 -0.0318773897130259"
+        rpy="0 0 0" />
+      <mass
+        value="0.289031984022191" />
+      <inertia
+        ixx="0.000202802134225507"
+        ixy="2.08375050252457E-10"
+        ixz="-1.07324494570797E-07"
+        iyy="0.000203587280513312"
+        iyz="-1.58994797887464E-07"
+        izz="0.000316585846451796" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dscr5_6/meshes/llink7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint7"
+    type="revolute">
+    <origin
+      xyz="0 -0.1805 0"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="llink6" />
+    <child
+      link="llink7" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="60"
+      velocity="1.57" />
+  </joint>
+</robot>

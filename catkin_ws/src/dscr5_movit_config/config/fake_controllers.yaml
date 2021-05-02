@@ -1,0 +1,24 @@
+controller_list:
+  - name: fake_left_manipulator_controller
+    joints:
+      - ljoint1
+      - ljoint2
+      - ljoint3
+      - ljoint4
+      - ljoint5
+      - ljoint6
+      - ljoint7
+  - name: fake_right_manipulator_controller
+    joints:
+      - rjoint1
+      - rjoint2
+      - rjoint3
+      - rjoint4
+      - rjoint5
+      - rjoint6
+      - rjoint7
+initial:  # Define initial robot poses.
+  - group: left_manipulator
+    pose: original_left
+  - group: right_manipulator
+    pose: original_right

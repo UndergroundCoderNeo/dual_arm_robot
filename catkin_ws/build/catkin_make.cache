@@ -1,0 +1,2 @@
+CamToBaseTrans:Dsc5:dscr5_6:dual_config:find_object_2d:probot_demo:ros_astra_camera:tensorflow_object_detector:usb_cam:vision_msgs:wayPoints
+-DCATKIN_DEVEL_PREFIX=/home/dell/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dell/catkin_ws/install -G Unix Makefiles

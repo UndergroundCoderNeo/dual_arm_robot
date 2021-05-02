@@ -1,0 +1,8 @@
+prefix=/home/dell/catkin_ws/devel
+
+Name: dscr5_movit_onfig
+Description: Description of dscr5_movit_onfig
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
