@@ -1,12 +1,22 @@
-# dual_arm_robot
-use Ros to build a handeye system using for positing and picking objects
 # 操作教程
+
+## 环境
+
+tensorflow==1.14.0
+
+ubuntu 16.04
+
+ROS kinetic
+
+python 3.6
+
+## 使用方法
 
 1.连接树莓派,运行手抓的socket server程序
 
 确认树莓派和上位机处于同一Wi-Fi下
 
-```cmd
+```cpp
 ssh pi@192.168.0.10
 password:qwaa1234 
 cd ~/Documents
@@ -15,7 +25,7 @@ python3 TControl.py
 
 2.打开接受路点的socket server
 
-```cmd
+```cpp
 cd ~/sendWayPoints
 python3 MidServer.py
 ```
@@ -26,20 +36,20 @@ python3 MidServer.py
 
 tensorflow 版本1.14.0
 
-```cmd
+```cpp
 source ~/tensorflow/bin/activate        //optional
 roslaunch tensorflow_object_detector vision.launch
 ```
 
 4.打开rviz
 
-```cmd
+```cpp
 roslaunch dual_config demo.launch
 ```
 
 5.运行左右臂规划程序
 
-```cmd
+```cpp
 rosrun probot_demo rLeftMotion
 rosrun probot_demo rRightMotion
 ```
@@ -48,7 +58,7 @@ rosrun probot_demo rRightMotion
 
 6.发送路点信息给双臂机器人
 
-```cmd
+```cpp
 cd ~/sendWayPoints
 python3 RobotArmControl.py
 ```
