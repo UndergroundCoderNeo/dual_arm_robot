@@ -17,7 +17,7 @@ python 3.6
 确认树莓派和上位机处于同一Wi-Fi下
 
 ```cpp
-ssh pi@192.168.0.10
+ssh pi@192.168.0.10   //(depend on your pi ip config)
 password:qwaa1234 
 cd ~/Documents
 python3 TControl.py
